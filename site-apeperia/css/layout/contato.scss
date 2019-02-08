@@ -7,6 +7,9 @@
 form {
   margin: 0 auto;
   width: 50%;
+  @media #{$mq-mobile} {
+    width: auto;
+  }
 }
 
 .contato input,
@@ -14,7 +17,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  @include borda-arredonda;
+  @include border-radius(0.3em);
   border: 2px solid #ccc;
 }
 
@@ -26,6 +29,6 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  @include borda-arredonda;
-  @include sombra-padrao;
+  @include border-radius(0.3em);
+  @include  box-shadow(black 0 2px 6.65px);
 }

@@ -4,15 +4,17 @@
   border-radius: $raio;
 }
 
-//Sobreamento no SASS
-@mixin sombra-padrao{
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+//Image Repkacement SASS
+%image-replacement{
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
-//Image Repkacement SASS
-@mixin image-replacement{
-  text-indent: -9999px;
-    overflow: hidden;
-   background-repeat: no-repeat;
+%sombra-padrao{
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3); 
 }
+
+@import 'compass/css3';
+@import 'compass/utilities';
